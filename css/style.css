@@ -6,17 +6,20 @@
   font-family: 'Zilla Slab', serif;
 }
 
+.border {
+  border: 2px solid black;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.border {
-  border: 2px solid black;
-}
-
-.flex {
-  display: flex;
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  background-color: #FFFFFF;
 }
 
 .flexColumn {
@@ -29,24 +32,39 @@ body {
   flex-direction: row;
 }
 
+.borderBttm{
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.borderTop{
+  border-top: 1px solid #333333;
+} 
+
 .centerV {
   align-content: center;
   padding: 5px;
 }
 
-.justifyCenter {
-  justify-content: center;
+.clickable:hover {
+  cursor: pointer;
+}
+/* Header starts here */
+
+.headerLeft2 div, .topic {
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 6px;
 }
 
-.headerLeft1{
-  flex: 0 1 auto;
+.headerLeft2 {
+  align-self: stretch;
+  flex: 2 1 auto;
+  font-weight: bold;
 }
 
-.menu {
-  width: 15px;
-  height: 2px;
-  background-color: black;
-  margin: 6px 0;
+.headerLeft1 {
+  margin: 0 0 0 2%;
 }
 
 .headerLeft1 div {
@@ -55,139 +73,90 @@ body {
   margin: 3px;
 }
 
-.headerLeft2{
-  align-self: stretch;
-  flex: 2 1 auto;
-  font-weight: bold;
-}
-
-.headerLeft2 div {
-  align-self: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin: 6px;
-}
-
-#nytlogo {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .headerCenter{
   align-self: stretch;
   flex: 2 1 auto;
 }
 
-.headerRight{
-flex: 1 1 auto;
+.menu {
+  width: 13px;
+  height: 2.2px;
+  background-color: rgb(88, 85, 85);
+  margin: 2px 0 !important;
 }
 
-.headerRight div {
-  align-self: center;
-  flex: 1 1 auto;
-  margin: 3px;
+.mGlass > img {
+  height :15px;
+   width :auto;
 }
 
-.subscribe{
-  align-self: center;
-  text-decoration: underline black;
-  color: black;
-  font-size: small;
-  font-weight: bold;
-  flex: 2 1 auto;
+.topic {
+  font-size: 13px;
+}
+
+.topic:hover {
+  text-decoration: underline;
+}
+
+#nytlogo {
+  height: 25px;
+  width : auto; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.buttonGroup {
+  float: right;
+  width:auto;
+  margin: 0 60px 0 0;
+  padding: 4px 0;
+}
+
+.subscribe, .login {
+  background-color: #567B95;
+  line-height: 30px;
   text-align: center;
-}
-
-.login {
-  margin-right: 2px;
-  flex: 1 1 auto;
-}
-
-#login {
-
-}
-
-.login div{
-  align-self: center;
-  text-decoration: none;
   color: white;
-  font-weight: bold;
-  background-color: #333333;
-  justify-self: center;
-  padding: 5px;
-  border-radius: 5px;
-  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  border-style: none;
+  border-radius: 4px;
+  margin: 0 5px 0 0;
+  padding: 0 6px;
 }
 
-.borderBttm{
-  border-bottom: 1px solid #e2e2e2;
-}
+/* Here finishes Jheader code*/
 
-.borderTop{
-  border-top: 2px solid #333333;
-}
-
-/* Here finishes Jose's header code*/
-
-.box {
-  width: 200px;
-  height: 100%;
-}
-
-header {
-  width: 100%;
-  height: 40px;
-  position: fixed;
-  background-color: #FFFFFF;
-}
-
-.nav-container {
-  height: 40px;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.nav-toggle {
-  flex-direction: row;
-}
-
-.toggles-div {
-  width: 50%;
-  flex-direction: column;
-  padding: 10px 0 0 40px;
-}
-
-.toggles {
-  width: 14px;
-  height: 2px;
-  background-color: black;
-  margin: 0 0 2.5px 0;
-}
-
-.footr {
+ .footr {
   height: 50px;
   width: 100%;
   position: fixed;
   bottom: 0;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .footr-announcement {
-  flex: 1 1 auto;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
+  height: 100%;
+  width: 65%;
+  float: left;
 }
 
-.footr-toggle {
-  margin-left: 40px;
-  margin-right: 30px;
-  justify-self: center;
-  font-size: small;
-  font-weight: bold;
-  align-self: center;
+.footr-announcement > p {
+  float: right;
+  font-size: 14px;
+}
+
+.footerRight {
+  width: 35%;
+  margin: 0 10% 0 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerRight > p {
+  font-size: 12px;
+  margin:0 40px 0 0;
+  font-weight: 800;
 }
 
 #chevron {
@@ -197,6 +166,3 @@ header {
   flex: 0 1 auto;
 }
 
-.footerRight {
-  margin: 8px;
-}
