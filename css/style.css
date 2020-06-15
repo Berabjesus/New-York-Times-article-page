@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 0 50px 0;
   padding: 0;
   min-height: 100vh;
 }
@@ -185,8 +185,42 @@ main {
     ". a1 .";
 }
 
-.main-title {
+.main-intro {
   grid-area: m;
+  text-align: left;
+}
+
+.intro-title {
+  font-size: xx-large;
+  font-style: italic;
+  color:#121212;
+  margin: 0 20% 0 20%;
+}
+
+intro-title > h1{
+  font-style: italic;
+  display: inline-block;
+}
+
+.intro-img {
+  width: 100%;
+  text-align: left;
+}
+
+.intro-img > img {
+  width:100%;
+}
+
+.intro-caption {
+  font-family: 'Tinos', serif;
+  color: #3a444c;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.intro-caption > span {
+  font-size: small;
+  color: #888888;
 }
 
 
