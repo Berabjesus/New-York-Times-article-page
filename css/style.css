@@ -13,6 +13,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -20,6 +21,10 @@ header {
   height: 40px;
   position: fixed;
   background-color: #FFFFFF;
+}
+
+.grid {
+  display: grid;
 }
 
 .flexColumn {
@@ -166,3 +171,23 @@ header {
   flex: 0 1 auto;
 }
 
+/* Main portion */
+/* main {
+  position: relative;
+  margin-top: 80px;
+} */
+/* 
+.main-container {
+  padding-bottom: 150px;
+  grid-template: 40px auto / 15% 70% 15%;
+  grid-template-areas: 
+    ". m ."
+    ". m .";
+} */
+
+/* .main-title {
+  border: 1px solid black ;
+  height: 100%;
+  width: 100px;
+  grid-area: m;
+} */
