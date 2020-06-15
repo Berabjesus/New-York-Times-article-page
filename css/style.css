@@ -6,6 +6,10 @@
   font-family: 'Zilla Slab', serif;
 }
 
+.tinos {
+  font-family: 'Tinos', serif;
+}
+
 .border {
   border: 2px solid black;
 }
@@ -213,7 +217,7 @@ main {
 
 .intro-caption {
   font-size: smaller;
-  font-family: 'Tinos', serif;
+
   color: #3a444c;
   padding-right: 20px;
   width: 70%;
@@ -235,6 +239,13 @@ main {
 
 .article1-portion1 {
   grid-area: p1;
+  font-size: small;
+  color: #333333;
+  font-weight: bold;
+}
+
+#article1-link{
+  color: #333333;
 }
 
 .portion1-links > p {
@@ -268,5 +279,15 @@ main {
 
 .portion1-article > p {
   font-size: 1.25rem;
-  font-family: 'Tinos', serif;
+}
+
+.divider {
+  grid-area: d;
+  text-align: center;
+  font-weight: bold;
+}
+
+.divider-text > a {
+  text-decoration: none;
+  color: #326891
 }
