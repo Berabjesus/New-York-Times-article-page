@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 0 0 50px 0;
+  margin: 0 0 60px 0;
   padding: 0;
   min-height: 100vh;
 }
@@ -191,13 +191,13 @@ main {
 }
 
 .intro-title {
-  font-size: xx-large;
+  font-size: x-large;
   font-style: italic;
   color:#121212;
-  margin: 0 20% 0 20%;
+  margin: 0 25% 0 25%;
 }
 
-intro-title > h1{
+.intro-title > h1{
   font-style: italic;
   display: inline-block;
 }
@@ -212,10 +212,11 @@ intro-title > h1{
 }
 
 .intro-caption {
+  font-size: smaller;
   font-family: 'Tinos', serif;
   color: #3a444c;
   padding-right: 20px;
-  width: 60%;
+  width: 70%;
 }
 
 .intro-caption > span {
@@ -223,4 +224,49 @@ intro-title > h1{
   color: #888888;
 }
 
+.main-article1 {
+  grid-area: a1;
+  grid-template: repeat(3, auto) / 25% 50% 25%;
+  grid-template-areas: 
+    ". p1 ."
+    ". d as"
+    ". p2 .";
+}
 
+.article1-portion1 {
+  grid-area: p1;
+}
+
+.portion1-links > p {
+  display: inline-block;
+}
+
+.links-elements {
+  float: right;
+}
+
+.links-elements, .links-elements li {
+  display: inline-block;
+}
+
+.elements {
+  margin: 0 10px 0 0;
+}
+
+.elements:not(:nth-child(n + 5)) {
+  border-radius: 50%;
+  background-color: rgb(228, 213, 213);
+  padding: 4px;
+  text-align: center;
+}
+
+.elements > img{
+  float: left;
+  height: 15px;
+  width: auto;
+}
+
+.portion1-article > p {
+  font-size: 1.25rem;
+  font-family: 'Tinos', serif;
+}
