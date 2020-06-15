@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Space Ripples Reveal Big Bang’s Smoking Gun</title>
 </head>
 <body>
-    <header class="border">
-        <nav>
+    <header class="">
+        <div class="borderBttm flexRow">
+            <div class="headerLeft1 flexRow">
+              <div id="hamburger" class="centerV">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+              </div>
+              <div id="lupa" class="centerV">
+                <img src="img/lupa.png" alt="lupa" height="15px" width="auto">
+              </div>
+            </div>
+            <div class="headerLeft2 franklin flex"><div>SPACE & COSMOS</div></div>
+            <div class="headerCenter flex"><img src="img/nyt.svg" alt="NYT" height="30px" width="auto" id="nytlogo"></div>
+            <div class="headerRight flex flexRow">
+              <a href="#" class="subscribe franklin" >Subscribe now</a>
+              <div class="login flex franklin" ><div id="login">Log in</div></div>
+            </div>
+          </div>
+        <!--<nav>
             <div class="nav-container flex">
                 <div class="nav-toggle flex border box">
                     <div class="toggles-div flex">
@@ -21,7 +41,7 @@
                 <div class="nav-brand border box"></div>
                 <div class="nav-buttons border box"></div>
             </div>
-        </nav>
+        </nav>-->
     </header>
 
     <main>
@@ -31,9 +51,9 @@
     </main>
 
     <footer>
-        <nav class="footr border flex">
-          <div class="footr-announcement border">Up-to-date information about coronavirus is available for free</div>
-          <div class="footr-toggle border">EXPAND</div>
+        <nav class="footr borderTop franklin flex">
+          <div class="footr-announcement">Up-to-date information about coronavirus is available for free</div>
+          <div class= "flexRow footerRight"><div class="footr-toggle">EXPAND</div> <img src="https://img.icons8.com/material-rounded/24/000000/chevron-up.png" alt="chevron" id="chevron"> </div>
         </nav>
     </footer>
 </body>
