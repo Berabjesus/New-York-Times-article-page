@@ -183,11 +183,13 @@ main {
 }
 
 .main-container {
-  grid-template: repeat(3, auto) / 15% 70% 15%;
+  grid-template: repeat(5, auto) / 15% 70% 15%;
   grid-template-areas: 
     ". m ."
     ". a1 ."
-    ". d .";
+    ". d ."
+    ". a2 ."
+    ". im1 .";
 }
 
 .main-intro {
@@ -360,11 +362,12 @@ main {
 }
 
 .diagram-container {
-  grid-template: repeat(4, auto) / 10% 80% 10%;
+  grid-template: repeat(5, auto) / 10% 80% 10%;
   grid-template-areas: 
     ". h ."
     ". t ."
     ". d ."
+    ". l ."
     ". c .";
 }
 
@@ -392,6 +395,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center top;
+  margin-bottom: 2%;
 }
 
 .diagram-text {
@@ -413,6 +417,66 @@ main {
   margin: 0 10px 0 0;
 }
 
-figcaption {
+.diagram-line {
+  margin-top: 1%;
+  grid-area: l;
+  /*width: 10%;*/
+  color: #888888;
+  text-align: left;
+}
+
+.diagram-caption {
   grid-area: c;
+}
+
+.main-article2 {
+  grid-area: a2;
+  grid-template: auto auto auto/ 25% 50% 25%;
+  grid-template-areas: 
+    ". pa1 ."
+    ". vi ."
+    ". pa2 .";
+}
+
+.article2-text1 {
+  grid-area: pa1;
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+.article2-video {
+  grid-area: vi;
+}
+.article2-video > iframe {
+  width: 100%;
+}
+
+.video-caption {
+  color: #3a444c;
+}
+
+.video-caption > span {
+  font-size: small;
+  color: #888888;
+}
+
+.article2-text2 {
+  grid-area: pa2;
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+.article2-text2 strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.article2-pic{
+  width: 75%;
+  grid-area: im1;
+  text-align: left;
+}
+
+.article2-pic > img {
+  width: 75%;
 }
