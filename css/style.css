@@ -185,8 +185,9 @@ main {
 .main-container {
   grid-template: repeat(3, auto) / 15% 70% 15%;
   grid-template-areas: 
-    ". m md"
-    ". a1 .";
+    ". m ."
+    ". a1 ."
+    ". d .";
 }
 
 .main-intro {
@@ -217,7 +218,6 @@ main {
 
 .intro-caption {
   font-size: smaller;
-
   color: #3a444c;
   padding-right: 20px;
   width: 70%;
@@ -356,5 +356,60 @@ main {
 /* Diagram section starts here */
 
 .main-diagram {
-  grid-area: md;
+  grid-area: d;
+}
+
+.diagram-container {
+  grid-template: repeat(4, auto) / 10% 80% 10%;
+  grid-template-areas: 
+    ". h ."
+    ". t ."
+    ". d ."
+    ". c .";
+}
+
+.diagram-title {
+  font-size: 18px;
+  grid-area: h;
+  margin: 0;
+}
+
+.digram-content {
+  grid-area: t;
+}
+
+.digram-content > p {
+  margin: 0;
+  font-size: 15px;
+  color: #3a444c;
+}
+
+.diagram-div {
+  grid-area: d;
+  position: relative;
+  width: 100%;
+}
+
+.diagram-pic {
+  position: absolute;
+  max-width: 100%;
+}
+
+.diagram-text {
+  position: absolute;
+  top: 110px;
+  grid-template: repeat(2, 250px) / repeat(4, 1fr);
+  grid-template-areas: 
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+  gap: 15px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.text > strong {
+  font-size: 8px;
+  margin: 0 10px 0 0;
 }
