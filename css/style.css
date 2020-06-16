@@ -388,15 +388,14 @@ main {
   grid-area: d;
   position: relative;
   width: 100%;
-}
-
-.diagram-pic {
-  position: absolute;
-  max-width: 100%;
+  background-image: url("../img/middle-image.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
 }
 
 .diagram-text {
-  position: absolute;
+  position: relative;
   top: 110px;
   grid-template: repeat(2, 250px) / repeat(4, 1fr);
   grid-template-areas: 
@@ -406,10 +405,14 @@ main {
 }
 
 .text {
-  font-size: 12px;
+  font-size: .8vw;
 }
 
 .text > strong {
-  font-size: 8px;
+  font-size: .55vw;
   margin: 0 10px 0 0;
+}
+
+figcaption {
+  grid-area: c;
 }
