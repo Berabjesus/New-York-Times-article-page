@@ -290,8 +290,9 @@ main {
   transform: scale(1);
 }
 
-.portion1-article > p {
+.portion1-content > p, .portion2-article1 > p{
   font-size: 1.25rem;
+  color: #333333;
 }
 
 .divider {
@@ -303,4 +304,8 @@ main {
 .divider-text > a {
   text-decoration: none;
   color: #326891
+}
+
+.portion2-article1 {
+  grid-area: p2;
 }
