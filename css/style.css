@@ -241,11 +241,12 @@ main {
   grid-area: p1;
   font-size: small;
   color: #333333;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
-#article1-link{
+#article1-link, #article1-link a {
   color: #333333;
+  font-size: 12px;
 }
 
 .portion1-links > p {
@@ -266,15 +267,27 @@ main {
 
 .elements:not(:nth-child(n + 5)) {
   border-radius: 50%;
-  background-color: rgb(228, 213, 213);
+  background-color: rgb(241, 236, 236);
+  border: 1px solid rgb(241, 236, 236); 
   padding: 4px;
   text-align: center;
 }
 
 .elements > img{
   float: left;
-  height: 15px;
+  height: 12px;
   width: auto;
+}
+
+.elements:nth-child(n + 5) > img{
+  height: 20px;
+}
+
+.elements:hover {
+  cursor: pointer;
+  background-color: white;
+  /* border: 1px solid rgb(241, 236, 236); */
+  transform: scale(1);
 }
 
 .portion1-article > p {
