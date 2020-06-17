@@ -59,12 +59,13 @@ header {
 .clickable:hover {
   cursor: pointer;
 }
+
 /* Header starts here */
 
-.headerLeft2 div, 
+.headerLeft2 div,
 .topic {
   align-self: center;
-  margin:10px 6px 10px 6px;
+  margin: 10px 6px 10px 6px;
 }
 
 .headerLeft2 {
@@ -167,7 +168,7 @@ header {
 
 .footerRight > p {
   font-size: 12px;
-  margin:0 40px 0 0;
+  margin: 0 40px 0 0;
   font-weight: 800;
 }
 
@@ -218,7 +219,7 @@ main {
 }
 
 .intro-img > img {
-  width:100%;
+  width: 100%;
 }
 
 .intro-caption {
@@ -279,7 +280,7 @@ main {
   text-align: center;
 }
 
-.elements > im[a-z]\ {
+.elements > img {
   float: left;
   height: 12px;
   width: auto;
@@ -480,7 +481,7 @@ main {
 .article2-image {
   margin: 1vh 0;
   grid-area: i;
-  width:100%;
+  width: 100%;
   height: auto;
   align-items: center;
 }
