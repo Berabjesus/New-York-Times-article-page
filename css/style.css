@@ -189,7 +189,7 @@ main {
     ". a1 ."
     ". d ."
     ". a2 ."
-    ". im1 .";
+    ". a3 .";
 }
 
 .main-intro {
@@ -431,11 +431,12 @@ main {
 
 .main-article2 {
   grid-area: a2;
-  grid-template: auto auto auto/ 25% 50% 25%;
+  grid-template: repeat(4, auto) / 25% 50% 25%;
   grid-template-areas: 
     ". pa1 ."
     ". vi ."
-    ". pa2 .";
+    ". pa2 ."
+    "i i i";
 }
 
 .article2-text1 {
@@ -471,7 +472,7 @@ main {
   font-weight: bold;
 }
 
-.article2-pic{
+/* .article2-pic{
   width: 75%;
   grid-area: im1;
   text-align: left;
@@ -479,4 +480,75 @@ main {
 
 .article2-pic > img {
   width: 75%;
+} */
+
+.article2-image {
+  margin: 1vh 0;
+  grid-area: i;
+  width:100%;
+  height: auto;
+  align-items: center;
+}
+
+.article2-image > img, .article2-image > figcaption {
+  width: 60%;
+  height: auto;
+}
+
+.article2-image > figcaption {
+  margin: 1vh 0 0 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.main-article3 {
+  grid-area: a3;
+  grid-template: repeat(3, auto) / 25% 50% 25%;
+  grid-template-areas: 
+    ". c ."
+    ". f ."
+    ". l .";
+}
+
+.article3-content {
+  grid-area: c;
+}
+
+.article3-content > p{
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+.article3-footer {
+  grid-area: f;
+  font-size: .7rem;
+  color: #333333;
+}
+
+.article3-footer a {
+  color: #615e5e;
+}
+
+.article3-links {
+  grid-area: l;
+}
+
+.article3-links button {
+  width: 50%;
+  color: rgb(253, 245, 245);
+  background-color: #2c668f;
+  border-style: none;
+  height: 4vh;
+  font-weight: 600;
+  border: 1.5px solid black;
+  border-radius: 3px;
+}
+
+.article3-links div {
+  margin: 0;
+}
+
+.article3-links ul {
+  margin: 0;
+  
 }
