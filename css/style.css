@@ -478,6 +478,10 @@ main {
   color: #333;
 }
 
+.article2-text2 h2 {
+  margin: -10px 0;
+}
+
 .article2-text2 strong {
   font-size: 20px;
   font-weight: bold;

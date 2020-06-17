@@ -2,7 +2,7 @@
 
 > On this web project we have collaborated to replicate the NYT article.
 
-[screenshot](./img/Screenshot.JPG)
+![screenshot](img/Screenshot.JPG)
 
 This project is made to test our abilities in CSS and HTML regarding positioning
 of elements.
