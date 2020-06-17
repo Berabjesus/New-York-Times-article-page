@@ -180,13 +180,14 @@ header {
 }
 
 /* Main portion */
+
 main {
   margin: 80px 0 0 0;
 }
 
 .main-container {
   grid-template: repeat(5, auto) / 15% 70% 15%;
-  grid-template-areas: 
+  grid-template-areas:
     ". m ."
     ". a1 ."
     ". d ."
@@ -237,7 +238,7 @@ main {
 .main-article1 {
   grid-area: a1;
   grid-template: auto 100px auto / 25% 50% 25%;
-  grid-template-areas: 
+  grid-template-areas:
     ". p1 ."
     ". d as"
     ". p2 .";
@@ -250,8 +251,8 @@ main {
   font-weight: lighter;
 }
 
-#article1-link,
-#article1-link a {
+.article1-link,
+.article1-link a {
   color: #333;
   font-size: 12px;
 }
@@ -276,7 +277,7 @@ main {
 .elements:not(:nth-child(n + 5)) {
   border-radius: 50%;
   background-color: rgb(241, 236, 236);
-  border: 1px solid rgb(241, 236, 236); 
+  border: 1px solid rgb(241, 236, 236);
   padding: 4px;
   text-align: center;
 }
@@ -294,7 +295,6 @@ main {
 .elements:hover {
   cursor: pointer;
   background-color: white;
-  /* border: 1px solid rgb(241, 236, 236); */
   transform: scale(1);
 }
 
@@ -312,7 +312,7 @@ main {
 
 .divider-text > a {
   text-decoration: none;
-  color: #326891
+  color: #326891;
 }
 
 .portion2-article1 {
@@ -354,7 +354,6 @@ main {
   font-weight: normal;
   padding-left: 10px;
   text-align: left;
-  /* width: 50%; */
 }
 
 .asidePic {
@@ -370,7 +369,7 @@ main {
 
 .diagram-container {
   grid-template: repeat(5, auto) / 10% 80% 10%;
-  grid-template-areas: 
+  grid-template-areas:
     ". h ."
     ". t ."
     ". d ."
@@ -409,25 +408,24 @@ main {
   position: relative;
   top: 110px;
   grid-template: repeat(2, 250px) / repeat(4, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "t1 t2 t3 t4"
     "t5 t6 t7 t8";
   gap: 15px;
 }
 
 .text {
-  font-size: .8vw;
+  font-size: 0.8vw;
 }
 
 .text > strong {
-  font-size: .55vw;
+  font-size: 0.55vw;
   margin: 0 10px 0 0;
 }
 
 .diagram-line {
   margin-top: 1%;
   grid-area: l;
-  /*width: 10%;*/
   color: #888;
   text-align: left;
 }
@@ -439,7 +437,7 @@ main {
 .main-article2 {
   grid-area: a2;
   grid-template: repeat(4, auto) / 25% 50% 25%;
-  grid-template-areas: 
+  grid-template-areas:
     ". pa1 ."
     ". vi ."
     ". pa2 ."
@@ -455,6 +453,7 @@ main {
 .article2-video {
   grid-area: vi;
 }
+
 .article2-video > iframe {
   width: 100%;
 }
@@ -502,7 +501,7 @@ main {
 .main-article3 {
   grid-area: a3;
   grid-template: repeat(3, auto) / 25% 50% 25%;
-  grid-template-areas: 
+  grid-template-areas:
     ". c ."
     ". f ."
     ". l .";
@@ -519,7 +518,7 @@ main {
 
 .article3-footer {
   grid-area: f;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #333;
 }
 
@@ -551,7 +550,6 @@ main {
 
 .article3-links ul {
   margin: 0;
-  
 }
 
 .main-news {
@@ -566,13 +564,13 @@ main {
   height: auto;
   width: 71%;
   grid-template: repeat(6, auto) / repeat(3, minmax(100px, 1fr));
-  grid-template-areas: 
+  grid-template-areas:
     "h1 h1 ."
     "n1 n2 ."
     "n3 n4 n5"
     "h2 h2 h2"
     "ep1 ep2 ep3";
-    gap: 10px;
+  gap: 10px;
 }
 
 .news-grid > a {
@@ -604,25 +602,24 @@ main {
 
 .news > img {
   width: 100%;
-  /* height: 100%; */
 }
 
 .news > figcaption {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: lighter;
   color: #333;
   display: flex;
   flex-direction: column;
 }
 
-.news > figcaption > P:nth-child(1) {
+.news > figcaption > p:nth-child(1) {
   align-self: flex-end;
-  font-size: .5rem;
+  font-size: 0.5rem;
   margin: 0;
 }
 
 .news > figcaption > h3,
-.news > figcaption > P:last-child {
+.news > figcaption > p:last-child {
   margin: 1vh;
 }
 
@@ -676,4 +673,5 @@ main {
   cursor: pointer;
   color: #888;
 }
+
 /* ****************** news section ends here ************** */
