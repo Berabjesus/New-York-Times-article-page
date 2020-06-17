@@ -1,6 +1,6 @@
 # Project: Positioning and Floating Elements
 
-> In this project, we have collaborated to replicate the NYT article linked here - https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0
+> In this project, we have collaborated to replicate the NYT article linked below in the Acknowledgments section.
 
 ![screenshot](img/Screenshot.JPG)
 
