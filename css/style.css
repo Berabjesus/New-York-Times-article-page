@@ -111,7 +111,7 @@ header {
 
 #nytlogo {
   height: 25px;
-  width : auto;
+  width: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -123,7 +123,7 @@ header {
   padding: 4px 0;
 }
 
-.subscribe, 
+.subscribe,
 .login {
   background-color: #567b95;
   line-height: 30px;
@@ -204,11 +204,11 @@ main {
 .intro-title {
   font-size: x-large;
   font-style: italic;
-  color:#121212;
+  color: #121212;
   margin: 0 25% 0 25%;
 }
 
-.intro-title > h1{
+.intro-title > h1 {
   font-style: italic;
   display: inline-block;
 }
@@ -250,7 +250,8 @@ main {
   font-weight: lighter;
 }
 
-#article1-link, #article1-link a {
+#article1-link,
+#article1-link a {
   color: #333;
   font-size: 12px;
 }
@@ -263,7 +264,7 @@ main {
   float: right;
 }
 
-.links-elements, 
+.links-elements,
 .links-elements li {
   display: inline-block;
 }
@@ -297,7 +298,7 @@ main {
   transform: scale(1);
 }
 
-.portion1-content > p, 
+.portion1-content > p,
 .portion2-article1 > p {
   font-size: 1.25rem;
   color: #333;
@@ -486,7 +487,7 @@ main {
   align-items: center;
 }
 
-.article2-image > img, 
+.article2-image > img,
 .article2-image > figcaption {
   width: 60%;
   height: auto;
@@ -620,7 +621,7 @@ main {
   margin: 0;
 }
 
-.news > figcaption > h3, 
+.news > figcaption > h3,
 .news > figcaption > P:last-child {
   margin: 1vh;
 }
@@ -628,7 +629,7 @@ main {
 .news-grid > h4 {
   grid-area: h2;
   border-top: 1px solid black;
-  padding : 20px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .news-grid-6 {
@@ -655,7 +656,7 @@ main {
   font-size: 14px;
 }
 
-.news img, 
+.news img,
 .news h3:hover {
   cursor: pointer;
   color: #615e5e;
