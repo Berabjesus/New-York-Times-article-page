@@ -14,6 +14,10 @@
   border: 2px solid black;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   margin: 0 0 60px 0;
   padding: 0;
@@ -109,7 +113,7 @@ header {
   text-decoration: underline;
 }
 
-#nytlogo {
+.nytlogo {
   height: 25px;
   width: auto;
   margin-top: auto;
@@ -432,6 +436,7 @@ main {
 
 .diagram-caption {
   grid-area: c;
+  font-size: 13px;
 }
 
 .main-article2 {
@@ -554,7 +559,7 @@ main {
 
 .main-news {
   grid-area: n;
-  margin: 5vh 0 0 0;
+  margin: 5vh 0 3vh 0;
   justify-content: space-between;
 }
 
@@ -604,7 +609,7 @@ main {
   width: 100%;
 }
 
-.news > figcaption {
+.news > div {
   font-size: 0.8rem;
   font-weight: lighter;
   color: #333;
@@ -612,14 +617,14 @@ main {
   flex-direction: column;
 }
 
-.news > figcaption > p:nth-child(1) {
+.news > div > p:nth-child(1) {
   align-self: flex-end;
   font-size: 0.5rem;
   margin: 0;
 }
 
-.news > figcaption > h3,
-.news > figcaption > p:last-child {
+.news > div > h3,
+.news > div > p:last-child {
   margin: 1vh;
 }
 
@@ -646,6 +651,7 @@ main {
   width: 25%;
   border-top: 1px solid #333;
   padding: 3vh 0 0 0;
+  margin: 0 0 0 5vw;
 }
 
 .main-news > aside > h4 {
@@ -678,6 +684,9 @@ main {
 
 .main-footer {
   grid-area: f;
+  border-top: 3px double rgb(180, 197, 214);
+  padding: 2vh 0 0 0;
+  margin: 0 0 10vh 0;
 }
 
 .footer-logo {
@@ -740,7 +749,7 @@ main {
  }
 
 .subscribe1 > a > img {
-  height: 20px;
+  height: 15px;
   padding-right: 2px;
 }
 
