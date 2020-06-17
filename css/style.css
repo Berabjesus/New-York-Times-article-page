@@ -2,7 +2,7 @@
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.zilla{
+.zilla {
   font-family: 'Zilla Slab', serif;
 }
 
@@ -26,7 +26,7 @@ header {
   position: fixed;
   z-index: 100;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .grid {
@@ -43,13 +43,13 @@ header {
   flex-direction: row;
 }
 
-.borderBttm{
+.borderbttm {
   border-bottom: 1px solid #e2e2e2;
 }
 
-.borderTop{
-  border-top: 1px solid #333333;
-} 
+.borderTop {
+  border-top: 1px solid #333;
+}
 
 .centerV {
   align-content: center;
@@ -61,11 +61,10 @@ header {
 }
 /* Header starts here */
 
-.headerLeft2 div, .topic {
+.headerLeft2 div, 
+.topic {
   align-self: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin: 6px;
+  margin:10px 6px 10px 6px;
 }
 
 .headerLeft2 {
@@ -84,7 +83,7 @@ header {
   margin: 3px;
 }
 
-.headerCenter{
+.headerCenter {
   align-self: stretch;
   flex: 2 1 auto;
 }
@@ -97,8 +96,8 @@ header {
 }
 
 .mGlass > img {
-  height :15px;
-   width :auto;
+  height: 15px;
+  width: auto;
 }
 
 .topic {
@@ -111,20 +110,21 @@ header {
 
 #nytlogo {
   height: 25px;
-  width : auto; 
+  width : auto;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .buttonGroup {
   float: right;
-  width:auto;
+  width: auto;
   margin: 0 60px 0 0;
   padding: 4px 0;
 }
 
-.subscribe, .login {
-  background-color: #567B95;
+.subscribe, 
+.login {
+  background-color: #567b95;
   line-height: 30px;
   text-align: center;
   color: white;
@@ -136,9 +136,9 @@ header {
   padding: 0 6px;
 }
 
-/* Here finishes Jheader code*/
+/* Here finishes Jheader code */
 
- .footr {
+.footr {
   height: 50px;
   width: 100%;
   position: fixed;
@@ -230,7 +230,7 @@ main {
 
 .intro-caption > span {
   font-size: small;
-  color: #888888;
+  color: #888;
 }
 
 .main-article1 {
@@ -245,12 +245,12 @@ main {
 .article1-portion1 {
   grid-area: p1;
   font-size: small;
-  color: #333333;
+  color: #333;
   font-weight: lighter;
 }
 
 #article1-link, #article1-link a {
-  color: #333333;
+  color: #333;
   font-size: 12px;
 }
 
@@ -262,7 +262,8 @@ main {
   float: right;
 }
 
-.links-elements, .links-elements li {
+.links-elements, 
+.links-elements li {
   display: inline-block;
 }
 
@@ -278,13 +279,13 @@ main {
   text-align: center;
 }
 
-.elements > img{
+.elements > im[a-z]\ {
   float: left;
   height: 12px;
   width: auto;
 }
 
-.elements:nth-child(n + 5) > img{
+.elements:nth-child(n + 5) > img {
   height: 20px;
 }
 
@@ -295,9 +296,10 @@ main {
   transform: scale(1);
 }
 
-.portion1-content > p, .portion2-article1 > p{
+.portion1-content > p, 
+.portion2-article1 > p {
   font-size: 1.25rem;
-  color: #333333;
+  color: #333;
 }
 
 .divider {
@@ -321,7 +323,7 @@ main {
 
 .divider-line {
   width: 10%;
-  color: #888888;
+  color: #888;
 }
 
 .article1-aside {
@@ -343,10 +345,10 @@ main {
   align-items: center;
 }
 
-.aside-container > a{
+.aside-container > a {
   font-size: 14px;
   text-decoration: none;
-  color: #333333;
+  color: #333;
   font-weight: normal;
   padding-left: 10px;
   text-align: left;
@@ -424,7 +426,7 @@ main {
   margin-top: 1%;
   grid-area: l;
   /*width: 10%;*/
-  color: #888888;
+  color: #888;
   text-align: left;
 }
 
@@ -445,7 +447,7 @@ main {
 .article2-text1 {
   grid-area: pa1;
   font-size: 1.25rem;
-  color: #333333;
+  color: #333;
 }
 
 .article2-video {
@@ -461,29 +463,19 @@ main {
 
 .video-caption > span {
   font-size: small;
-  color: #888888;
+  color: #888;
 }
 
 .article2-text2 {
   grid-area: pa2;
   font-size: 1.25rem;
-  color: #333333;
+  color: #333;
 }
 
 .article2-text2 strong {
   font-size: 20px;
   font-weight: bold;
 }
-
-/* .article2-pic{
-  width: 75%;
-  grid-area: im1;
-  text-align: left;
-}
-
-.article2-pic > img {
-  width: 75%;
-} */
 
 .article2-image {
   margin: 1vh 0;
@@ -493,7 +485,8 @@ main {
   align-items: center;
 }
 
-.article2-image > img, .article2-image > figcaption {
+.article2-image > img, 
+.article2-image > figcaption {
   width: 60%;
   height: auto;
 }
@@ -501,7 +494,7 @@ main {
 .article2-image > figcaption {
   margin: 1vh 0 0 0;
   font-size: 14px;
-  color: #333333;
+  color: #333;
 }
 
 .main-article3 {
@@ -517,15 +510,15 @@ main {
   grid-area: c;
 }
 
-.article3-content > p{
+.article3-content > p {
   font-size: 1.25rem;
-  color: #333333;
+  color: #333;
 }
 
 .article3-footer {
   grid-area: f;
   font-size: .7rem;
-  color: #333333;
+  color: #333;
 }
 
 .article3-footer a {
@@ -539,7 +532,7 @@ main {
 .article3-links button {
   width: 50%;
   color: rgb(253, 245, 245);
-  background-color: #76a5c7;
+  background-color: #639bc4;
   border-style: none;
   height: 4.3vh;
   line-height: 4.3vh;
@@ -615,7 +608,7 @@ main {
 .news > figcaption {
   font-size: .8rem;
   font-weight: lighter;
-  color: #333333;
+  color: #333;
   display: flex;
   flex-direction: column;
 }
@@ -626,7 +619,8 @@ main {
   margin: 0;
 }
 
-.news > figcaption > h3, .news > figcaption > P:last-child {
+.news > figcaption > h3, 
+.news > figcaption > P:last-child {
   margin: 1vh;
 }
 
@@ -660,7 +654,8 @@ main {
   font-size: 14px;
 }
 
-.news img, .news h3:hover {
+.news img, 
+.news h3:hover {
   cursor: pointer;
   color: #615e5e;
 }
@@ -677,6 +672,6 @@ main {
 
 .main-news > aside > a:hover {
   cursor: pointer;
-  color: #888888;
+  color: #888;
 }
 /* ****************** news section ends here ************** */
