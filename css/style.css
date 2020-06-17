@@ -24,6 +24,7 @@ header {
   width: 100%;
   height: 40px;
   position: fixed;
+  z-index: 100;
   top: 0;
   background-color: #FFFFFF;
 }
@@ -560,13 +561,13 @@ main {
 .news-grid {
   height: auto;
   width: 73%;
-  grid-template: repeat(6, auto) / repeat(auto-fit, minmax(100px, 1fr));
+  grid-template: repeat(6, auto) / repeat(3, minmax(100px, 1fr));
   grid-template-areas: 
     "h1 h1 ."
     "n1 n2 ."
     "n3 n4 n5"
     "h2 h2 h2"
-    "ep1 ep2 ep2";
+    "ep1 ep2 ep3";
     gap: 10px;
 }
 
@@ -609,6 +610,7 @@ main {
 
 .news > figcaption > P:nth-child(1) {
   align-self: flex-end;
+  font-size: .5rem;
   margin: 0;
 }
 
@@ -620,6 +622,18 @@ main {
   grid-area: h2;
   border-top: 1px solid black;
   padding : 20px 0 0 0;
+}
+
+.news-grid-6 {
+  grid-area: ep1;
+}
+
+.news-grid-7 {
+  grid-area: ep2;
+}
+
+.news-grid-8 {
+  grid-area: ep3;
 }
 
 .main-news > aside {
