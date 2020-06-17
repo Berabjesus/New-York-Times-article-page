@@ -189,7 +189,9 @@ main {
     ". a1 ."
     ". d ."
     ". a2 ."
-    ". a3 .";
+    ". a3 ."
+    ". n ."
+    ". f .";
 }
 
 .main-intro {
@@ -544,11 +546,55 @@ main {
   border-radius: 3px;
 }
 
-.article3-links div {
-  margin: 0;
-}
-
 .article3-links ul {
   margin: 0;
   
+}
+
+.main-news {
+  grid-area: n;
+  margin: 5vh 0 0 0;
+  justify-content: space-between;
+}
+
+.news-grid {
+  height: auto;
+  width: 73%;
+  grid-template: repeat(6, auto) / repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-areas: 
+    "h1 h1 ."
+    "n1 n2 ."
+    "n3 n4 n5"
+    "hr hr hr"
+    "h2 . ."
+    "ep1 ep2 ep2";
+}
+
+.news-grid > a {
+  grid-area: h1;
+}
+
+.news-grid-1 {
+  grid-area: n1;
+}
+
+.news-grid-2 {
+  grid-area: n2;
+}
+
+.news-grid-3 {
+  grid-area: n3;
+}
+
+.news-grid-4 {
+  grid-area: n4;
+}
+
+.news-grid-5 {
+  grid-area: n5;
+}
+
+.main-news > aside {
+  height: auto;
+  width: 23%;
 }
